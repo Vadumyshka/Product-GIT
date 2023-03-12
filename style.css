@@ -64,6 +64,100 @@ a {
     color: white;
 }
 
+/* Grudilov branch */
+.header__conteiner {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 19px;
+}
+.header__nav-bar {
+    display: flex;
+}
+.header__logo-1 {
+    height: 36px;
+    margin-right: 16px;
+}
+.header__logo-2 {
+    height: 28px;
+    width: 122px;
+}
+.header__menu {
+    display: flex;
+    gap: 23px;
+}
+.header__list {
+    display: flex;
+    margin: 14px 20px 0 160px;
+    gap: 25px;
+}
+ .header__button-list {
+    display: flex;
+    gap: 27px;
+}
+.header__button--white {
+    border: 1px #BCD0E5 solid;
+}
+.main-title__content {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 25px;
+}
+.main-title__block {
+    width: 420px;
+    margin: 145px 0 114px 0;
+}
+.main-title__paragraph {
+    margin: 18px 0 45px 0;
+}
+.main-title__buttons {
+    display: flex;
+    align-items: first baseline;
+    gap: 25px;
+}
+.main-title__underline {
+    font-weight: 600;
+    color: #02897A;
+    text-decoration: underline;
+}
+.for-you {
+    background: url(./image/Bg.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 550px;
+}
+.for-you__title {
+    text-align: center;
+    font-weight: 700px;
+    margin-bottom: 58px;
+}
+.for-you__box {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 58px;
+    margin: 0 5%;
+    gap: 45px
+}
+.for-you__box-block {
+    width: 240px;
+    height: 220px;
+}
+.for-you--title-size {
+    font-size: 22px;
+    font-weight: 600;
+}
+.for-you__button {
+    margin: 60px 42% 0 42%;
+}
+/* Continue Grudilov branch */
+.strategies__line {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin: 33px 0 64px 0;
+    }
+.strategies__line-block{
+
+
 .management__content {
     padding-top: 150px;
     display: flex;
@@ -208,6 +302,7 @@ a {
 .strategies__line-block{
     width: 100%;
     min-width: 165px;
+
     border-radius: 8px;
     border: 1px solid #DEDEDE;
 }
@@ -221,10 +316,109 @@ a {
     margin-top: 12px;
 }
 .strategies__text{
+
+    width: 348px;
+
+
     padding: 24px 30px 40px 24px;
 }
 .strategies__dots {
     width: 68px;
+
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .header__list {
+        margin-left: 35px;
+    }
+    .header__menu {
+        gap: 15px;
+    }
+    .strategies__line {
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .main-title__block {
+        margin: 30px 0 10px 0;
+    }
+    .main-title__content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header__button-list {
+        flex-wrap: wrap;
+    }
+    .for-you__box{
+        flex-wrap: wrap;
+        margin-top: 80px;
+        align-items: center;
+    }
+    .for-you__box-block{
+        margin-top: -60px;
+        align-items: center;
+    }
+    .for-you__button {
+        margin-top: -10px;
+    }
+    .for-you {
+        height: 650px;
+    }
+    .strategies__content {
+        flex-wrap: wrap;
+    }
+    .strategies__line {
+        gap: 10px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .header__list {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .main-title__block {
+        text-align: center;
+    }
+   .strategies__content {
+        text-align: center
+   }
+}
+@media screen and (max-width: 600px) {
+    .for-you {
+        height: 1100px;
+    }
+    .header__logo-1 {
+        margin: 40px 10px 0 13px;
+    }
+    .header__logo-2 {
+        display: none;
+    }
+    .main-title__img{
+        width: 350px;
+    }
+    .main-title__block {
+        width: 350px;
+    }
+    .for-you__box{
+        flex-direction: column;
+        margin-top: 80px;
+    }
+    .for-you__button {
+        margin: 0 30% ;
+    }
+}
+@media screen and (max-width: 500px) {
+    .header__button-list {
+        margin-right: 10px;
+    }
+    .header__list {
+        flex-direction: column;
+    }
+
+}
+
+
     display: flex;
     gap: 10px;
     margin: 0 auto;
